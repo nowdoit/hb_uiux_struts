@@ -59,7 +59,6 @@
 		</action>
 	</package>
 
-
 	<include file="resource/struts-1.xml"></include>
 	<include file="resource/struts-2.xml"></include>
 </struts>
