@@ -31,6 +31,18 @@
 			<result name="input">/login/form.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
+		<action name="test31" class="com.struts.tutorial.action2.Action03" method="formView">
+			<result name="input">/login3/form.jsp</result>
+		</action>
+		<action name="test32" class="com.struts.tutorial.action2.Action03" >
+			<!--  
+			<interceptor-ref name="params" />
+			<interceptor-ref name="validation" />
+			<interceptor-ref name="workflow" />
+			-->
+			<result name="success">/login3/result.jsp</result>
+			<result name="input">/login3/form.jsp</result>
+		</action>
 	</package>
 	<package name="ex03" extends="struts-default">
 		<action name="test21" class="com.struts.tutorial.action3.Action01">
@@ -46,5 +58,9 @@
 			<result name="error">/error.jsp</result>
 		</action>
 	</package>
+
+
+	<include file="resource/struts-1.xml"></include>
+	<include file="resource/struts-2.xml"></include>
 </struts>
 
