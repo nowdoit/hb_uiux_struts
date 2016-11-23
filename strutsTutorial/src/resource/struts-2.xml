@@ -6,7 +6,12 @@
 	<package name="ex04" namespace="/ex04" extends="struts-default">
 		<action name="test41" class="com.struts.tutorial.action4.Action01">
 			<!-- <result type="redirect" name="success">/ex01.jsp</result> -->
-			<result type="redirectAction" name="success">test21</result>
+			<!-- <result type="redirectAction" name="success">test21</result> -->
+			<result type="chain" name="success"> <!-- chain은 parameter를 전달 못함 -->
+				<param name="actionName">test22</param>
+				<param name="id">admin</param>
+				<param name="pw">1234</param>
+			</result>
 		</action>
 	</package>
 </struts>    
